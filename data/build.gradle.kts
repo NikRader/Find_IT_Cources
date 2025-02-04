@@ -33,6 +33,9 @@ android {
 }
 
 dependencies {
+    // retrofit and json-converter
+    implementation(libs.retrofit.v2110)
+    implementation(libs.converter.gson)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

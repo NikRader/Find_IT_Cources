@@ -17,10 +17,10 @@
             android:name=".presentation.AccountScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.FavouritesScreenActivity"
+            android:name=".presentation.CourceScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.CourceScreenActivity"
+            android:name=".presentation.MainScreenActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.OnboardingScreenActivity"
@@ -29,7 +29,7 @@
             android:name=".presentation.RegistrationAndEnterScreenActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.MainScreenActivity"
+            android:name=".presentation.FavouritesScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,4 +5,7 @@
     <dimen name="Top_margin">140dp</dimen>
     <dimen name="btn_width">328dp</dimen>
     <dimen name="btn_height">48dp</dimen>
+    <dimen name="LEFT_MARGIN">16dp</dimen>
+    <dimen name="TOP_MARGIN">32dp</dimen>
+    <dimen name="line_height">2dp</dimen>
 </resources>
