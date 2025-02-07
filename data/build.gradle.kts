@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-kapt")
 }
 
 android {
@@ -36,6 +37,13 @@ dependencies {
     // retrofit and json-converter
     implementation(libs.retrofit.v2110)
     implementation(libs.converter.gson)
+    // Room-components
+    implementation(libs.androidx.room.runtime)
+    kapt(libs.androidx.room.compiler)
+    implementation(libs.room.ktx)
+
+    // Для работы с Flow, так как flow можно превратить в livedata, и на нее анвесить observer
+    implementation(libs.androidx.lifecycle.livedata.ktx)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
