@@ -7,14 +7,13 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.data.entities.User
 
-// Моя База Данных
-@Database (entities = [User::class], version = 1) // так как можеи быть много entity, то передаем их как массив
-abstract class MainDB() : RoomDatabase(), Parcelable {
+@Database(entities = [User::class], version = 1)
+abstract class MainDB : RoomDatabase() {
 
-   abstract fun getDao() : Dao // вернет интерфейс Dao с его функциями
+    abstract fun getUsersDao(): UsersDao
 
-    companion object{
-        fun getDb(context:Context): MainDB{
+    companion object {
+        fun createDb(context: Context): MainDB {
             return Room.databaseBuilder(
                 context.applicationContext,
                 MainDB::class.java,
@@ -22,5 +21,4 @@ abstract class MainDB() : RoomDatabase(), Parcelable {
             ).build()
         }
     }
-
 }

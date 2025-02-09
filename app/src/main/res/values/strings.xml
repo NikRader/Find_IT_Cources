@@ -5,4 +5,6 @@
     <string name="vk">VK</string>
     <string name="ok">OK</string>
     <string name="email_hint">examle@gmail.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

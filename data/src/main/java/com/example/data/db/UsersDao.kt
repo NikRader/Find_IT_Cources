@@ -7,7 +7,7 @@ import com.example.data.entities.User
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface Dao {
+interface UsersDao {
     @Insert
     fun insertUser(user: User)
 

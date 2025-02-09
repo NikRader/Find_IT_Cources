@@ -12,30 +12,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Find_IT_Cources"
+        android:name=".presentation.CoursesApp"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.AccountScreenActivity"
+            android:name=".presentation.Account"
             android:exported="false" />
         <activity
-            android:name=".presentation.CourceScreenActivity"
+            android:name=".presentation.CourseActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.MainScreenActivity"
-            android:exported="false" />
+            android:name=".presentation.activity.MainScreenActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
-            android:name=".presentation.OnboardingScreenActivity"
+            android:name=".presentation.OnboardingActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.RegistrationAndEnterScreenActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.FavouritesScreenActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
